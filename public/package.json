@@ -1,0 +1,31 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "description": "envato theme",
+  "main": "assets/js/main.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.11.1",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "postcss-loader": "^1.0.0",
+    "poststylus": "^0.2.3",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-relative-loader": "^3.4.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-glob-entries": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xxx",
+  "license": "ISC"
+}
