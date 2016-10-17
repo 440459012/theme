@@ -95,24 +95,38 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(2), __webpack_require__(15)]; (function($, bs, parallax) {
+	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(2), __webpack_require__(15), __webpack_require__(30)]; (function($, bs, parallax, owlCarousel) {
 	  var mainScripts;
 	  mainScripts = (function() {
 	    function mainScripts() {
 	      this.nodes = {
 	        langSwitchBtn: $('.js-lang-switcher-btn'),
 	        simpleTooltip: $('.simple-tooltip'),
-	        parallaxSection: $('.js-parallax')
+	        parallaxSection: $('.js-parallax'),
+	        headSlider: $('.js-head-slider'),
+	        headSliderNav: $('.js-head-slider-navigation')
 	      };
 	      this.init();
 	      this.events();
 	    }
 
 	    mainScripts.prototype.init = function() {
-	      return this.initParallax();
+	      this.initParallax();
+	      return this.initHeadSlider();
 	    };
 
 	    mainScripts.prototype.events = function() {};
+
+	    mainScripts.prototype.initHeadSlider = function() {
+	      return this.nodes.headSlider.owlCarousel({
+	        items: 1,
+	        loop: true,
+	        dots: false,
+	        animateIn: 'zoomInRight',
+	        animateOut: 'zoomOutLeft',
+	        navContainer: this.nodes.headSliderNav
+	      });
+	    };
 
 	    mainScripts.prototype.initParallax = function() {
 	      return this.nodes.parallaxSection.parallax();
