@@ -74,7 +74,7 @@ dev = {
           loader: "css-loader!postcss-loader!stylus-relative-loader"
       },
       { test: /\.html$/, loader: "underscore-template-loader" },
-      { test: /.(jpe?g|gif|png)$/, loader: 'file-loader?emitFile=false&name=../../[path][name].[ext]' },
+      { test: /.(jpe?g|gif|png)$/, loader: 'url-loader' },
       {
           test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.otf($|\?)|\.eot($|\?)|\.svg($|\?)/,
           loader: 'url-loader'
