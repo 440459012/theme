@@ -62,7 +62,11 @@ dev = {
       path.join(__dirname, 'src')
     ],
     alias: {
-        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js"
+        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js",
+        "waypoints" : __dirname+"/node_modules/waypoints/lib/jquery.waypoints.min.js",
+        "counterup" : __dirname+"/vendor/plugins/counterUp/counterup.min.js",
+        'masonry': 'masonry-layout',
+        'isotope': 'isotope-layout'
     }
   },
   module: {
@@ -111,7 +115,11 @@ prod = {
       path.join(__dirname, 'src')
     ],
     alias: {
-        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js"
+        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js",
+        "waypoints" : __dirname+"/node_modules/waypoints/lib/jquery.waypoints.min.js",
+        "counterup" : __dirname+"/vendor/plugins/counterUp/counterup.min.js",
+        'masonry': 'masonry-layout',
+        'isotope': 'isotope-layout'
     }
   },
   module: {
