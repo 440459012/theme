@@ -33,8 +33,8 @@ require [
         items:1
         loop:true
         dots:false
-        animateIn: 'zoomInRight'
-        animateOut: 'zoomOutLeft'
+        animateIn: 'fadeIn'
+        animateOut: 'fadeOut'
         navContainer:@nodes.headSliderNav
     initParallax:->
       @nodes.parallaxSection.parallax()

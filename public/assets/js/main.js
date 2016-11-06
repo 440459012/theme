@@ -95,7 +95,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(2), __webpack_require__(15), __webpack_require__(30)]; (function($, bs, parallax, owlCarousel) {
+	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(2), __webpack_require__(15), __webpack_require__(16)]; (function($, bs, parallax, owlCarousel) {
 	  var mainScripts;
 	  mainScripts = (function() {
 	    function mainScripts() {
@@ -122,8 +122,8 @@
 	        items: 1,
 	        loop: true,
 	        dots: false,
-	        animateIn: 'zoomInRight',
-	        animateOut: 'zoomOutLeft',
+	        animateIn: 'fadeIn',
+	        animateOut: 'fadeOut',
 	        navContainer: this.nodes.headSliderNav
 	      });
 	    };
