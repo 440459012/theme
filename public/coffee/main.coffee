@@ -8,7 +8,7 @@ require [
   class mainScripts
 
     constructor: ->
-      @nodes =
+      @nodes = 
         langSwitchBtn       : $ '.js-lang-switcher-btn'
         simpleTooltip       : $ '.simple-tooltip'
         parallaxSection      : $ '.js-parallax'
@@ -31,11 +31,14 @@ require [
     initHeadSlider:->
       @nodes.headSlider.owlCarousel
         items:1
-        loop:true
+        loop:false
         dots:false
+        nav:true
+        # animateOut: 'zoomOut'
+        navSpeed:1000
         animateIn: 'fadeIn'
-        animateOut: 'fadeOut'
         navContainer:@nodes.headSliderNav
+        navText:['','']
     initParallax:->
       @nodes.parallaxSection.parallax()
 
