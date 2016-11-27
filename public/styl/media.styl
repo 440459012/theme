@@ -6,3 +6,40 @@
     z-index:30;
   }
 }
+
+@media screen and (max-width:768px){
+	.header {
+	  &__menu {
+	    float: none;
+	    background:#000;
+	    margin:0 -15px;
+	    & ul {
+	      padding: 0;
+
+	      & li {
+	        display: block;
+	        margin: 15px 9px;
+	        float:none;
+	        background:none;
+        	&:hover{
+        		background:none;
+        	}
+	        & a{
+	        	line-height:initial;
+	        	padding:0;
+	        	background:none;
+	        	&:hover{
+	        		background:none;
+	        	}
+	        }
+	      }
+	    }
+
+	    & a,button {
+	      color: #fff;
+	      font-size: 13px;
+	      outline:none;
+	    }
+	  }
+	}
+}
