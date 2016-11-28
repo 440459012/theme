@@ -62,7 +62,7 @@ dev = {
       path.join(__dirname, 'src')
     ],
     alias: {
-        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js",
+        "parallaxjs" : __dirname+"/vendor/plugins/parallax.js/parallax.min.js",
         "waypoints" : __dirname+"/node_modules/waypoints/lib/jquery.waypoints.min.js",
         "counterup" : __dirname+"/vendor/plugins/counterUp/counterup.min.js",
         'masonry': 'masonry-layout',
@@ -115,7 +115,7 @@ prod = {
       path.join(__dirname, 'src')
     ],
     alias: {
-        "parallaxjs" : __dirname+"/node_modules/parallax.js/parallax.min.js",
+        "parallaxjs" : __dirname+"/vendor/plugins/parallax.js/parallax.min.js",
         "waypoints" : __dirname+"/node_modules/waypoints/lib/jquery.waypoints.min.js",
         "counterup" : __dirname+"/vendor/plugins/counterUp/counterup.min.js",
         'masonry': 'masonry-layout',
@@ -131,13 +131,13 @@ prod = {
           loader: "css-loader!postcss-loader!stylus-relative-loader"
       },
       { test: /\.html$/, loader: "underscore-template-loader" },
-      { test: /.(jpe?g|gif|png)$/, loader: 'file-loader?emitFile=false&name=../../[path][name].[ext]' },
-      // Optionally extract less files
-      // or any other compile-to-css language
+      { test: /.(jpe?g|gif|png)$/, loader: 'url-loader' },
       {
           test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.otf($|\?)|\.eot($|\?)|\.svg($|\?)/,
           loader: 'url-loader'
       },
+      // Optionally extract less files
+      // or any other compile-to-css language
       { test: /\.coffee$/, loader: "coffee-loader" },
       { test: /\.(coffee\.md|litcoffee)$/, loader: "coffee-loader?literate" }
     ]

@@ -1,11 +1,14 @@
 {
-  "name": "theme",
+  "name": "template",
   "version": "1.0.0",
-  "description": "envato theme",
+  "description": "envato template",
   "main": "assets/js/main.js",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "owl.carousel": "^2.2.0",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",

@@ -70,6 +70,7 @@ require [
         filterValue = $(this).attr('data-filter');
         iso.arrange
           filter: filterValue
+        $(window).trigger('resize').trigger('resize.px.parallax')
 
 
 
@@ -80,12 +81,17 @@ require [
           category: '[data-category]'
         },
         masonry:
-          columnWidth: 100
+          isFitWidth: true
+          columnWidth: 370
           gutter: 30
+
 
 
     initParallax:->
       @nodes.parallaxSection.parallax()
+      #reset on resize
+      $(window).resize ()=>
+        $(window).trigger('resize.px.parallax').trigger('scroll')
 
 
 

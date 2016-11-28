@@ -76,7 +76,7 @@ html,body{
   top: 0;
   width: 100%;
   color: #fff;
-  z-index: 999999999;
+  z-index: 100;
   padding: 36px 0;
 
   &__logo {
@@ -99,6 +99,9 @@ html,body{
         & a{
         	line-height:initial;
         	padding:0;
+          &:hover{
+            background-color:transparent;
+          }
         }
       }
     }
@@ -691,6 +694,7 @@ section {
   }
 
   & .grid {
+    margin:0 auto;
     &-item {
       float: left;
       width: 370px;
